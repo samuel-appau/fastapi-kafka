@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "fastapi-kafka"
+version = "0.1.0"
+description = "Fastapi project integration with kafka"
+authors = ["Samuel Appau"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "fastapi_kafka"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.95.1"
+uvicorn = "^0.21.1"
+kafka = "^1.3.5"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
